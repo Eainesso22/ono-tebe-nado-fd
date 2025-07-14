@@ -9,13 +9,17 @@
 .header__links-list {
     display: flex;
     align-items: center;
-    gap: 32px;
-    width: 391.48px;
-    height: 22px;
+    gap: 31.5px;
+    width: 392px;
     list-style: circle;
     font-family: Raleway , Arial, sans-serif;
     font-size: 18px;
     margin: 133px 36.52px 138px 50px;
+}
+
+.header__link {
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .header__link_active {
@@ -25,33 +29,34 @@
 .header__links-list-item {
     margin-left: 1px;
 }
+
 .header__links-list-item_no-bullit {
     list-style: none;
 }
 
 .header__logo {
-    width: 135px;
-    height: 115px;
+    margin-left: 5px;
+    margin-top: 1px;
+    width: 137px;
 }
 
 .address {
     font-family: Raleway , Arial, sans-serif;
     font-size: 18px;
-    line-height: 24.3px;
+    line-height: 24.5px;
     font-style: normal ;
-    max-width: 264.57px;
-    text-underline-offset: 5px;
+    width: 240px;
+    text-underline-offset: 4px;
 }
 
 .header__address {
-    margin: 95px 50px 100px 195px;
+    margin: 95px 50px 100px 190px;
 }
 
 .cover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 757px;
     position: relative;
     background-image: url(../images/cover.jpg);
     z-index: 0;
@@ -83,7 +88,6 @@
 }
 
 .aligned-text {
-    line-height: 114.99999999999999%;
     letter-spacing: 30px;
 }
 
@@ -97,17 +101,20 @@
 
 .aligned-text_center {
     text-align: center;
+    margin-top: 16px;
 }
 
 .aligned-text_right {
     text-align: right;
+    margin-top: 20px;
 }
 
 .cover__description {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 106px 50px 50px 50px;
+    margin: 104px 50px 50px 50px;
     width: 1000px;
 }
 
@@ -120,7 +127,6 @@
     position: relative;
     z-index: 2;
     word-spacing: 18.5px;
-    line-height: 28px;
     width: 637px;
     margin: 0 0 11px 0;
 }
@@ -228,6 +234,7 @@
     font-weight: 400;
     font-size: 20px;
     text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .about {
@@ -244,7 +251,7 @@
 
 .about__logo {
     width: 240px;
-    height: 240px;
+    height: 240px; /* В данном месте высота фиксированная, т.к. так по тз */
     background-color: black;
     border-radius: 100%;
     margin: 35px 0 0 47px;
@@ -255,7 +262,6 @@
 
 .about__logo-image {
     width: 148px;
-    height: 148px;
 }
 
 .about__title {
@@ -282,7 +288,7 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     place-content: center space-between;
-    margin: 140px 50px 82px 0;
+    margin: 166px 50px 82px 0;
 }
 
 .footer__menu {
@@ -294,6 +300,7 @@
 
 .footer__adress {
     margin-left: 50px;
+    width: 264.57px;
 }
 
 .footer__menu-link {
@@ -302,6 +309,7 @@
     font-size: 18px;
     text-align: center;
     text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .footer__menu-link_active {
@@ -332,5 +340,4 @@
 
 .footer__social-icon {
     width: 48px;
-    height: 48px;
 }
